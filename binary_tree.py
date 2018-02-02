@@ -17,22 +17,22 @@ def preorder(node):
         node.show()
         if node.left:
             preorder(node.left)
-            if node.right:
-                preorder(node.right)
+        if node.right:
+            preorder(node.right)
 def inorder(node):
     if node.data:
         if node.left:
             inorder(node.left)
-            node.show()
-            if node.right:
-                inorder(node.right)
+        node.show()
+        if node.right:
+            inorder(node.right)
 def postorder(node):
     if node.data:
         if node.left:
             postorder(node.left)
-            if node.right:
-                postorder(node.right)
-                node.show()
+        if node.right:
+            postorder(node.right)
+        node.show()
 
 if __name__ == "__main__":
     Root=BTree("root")
